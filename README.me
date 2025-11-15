@@ -76,3 +76,11 @@ Logs do treinamento do modelo local (ex: "Iniciando treinamento...").
 "Running on http://127.0.0.1:5000"
 
 Abra esse endereço (http://127.0.0.1:5000) no seu navegador para usar a aplicação.
+
+5. Caso seja necessário rodar localmente, alterar a linha:
+
+API_KEY = os.environ.get("API_KEY") 
+
+no arquivo app.py por:
+
+API_KEY = "SUA_CHAVE_API_DO_GEMINI" 
