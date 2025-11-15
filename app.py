@@ -11,7 +11,7 @@ from sklearn.naive_bayes import MultinomialNB
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
-API_KEY = os.environ.get("API-KEY")
+API_KEY = os.environ.get("API_KEY") 
 
 try:
     genai.configure(api_key=API_KEY)
@@ -131,17 +131,17 @@ def processar_email():
     
     Responda com um objeto JSON (ex: {{"sub_categoria": "...", "resposta_sugerida": "..."}})
     """
-    
+        
     try:
-        print(f"\"{texto_email}\"")
         prompt_completo = f"{prompt_sistema_openai}\n\nEmail a ser analisado: \"{texto_email}\""
+
         
         response = model.generate_content(
             prompt_completo
         )
         
         if not response.parts:
-            print("Erro: A API do Gemini bloqueou a resposta (mesmo com a configuração na chamada).")
+            print("Erro: A API do Gemini bloqueou a resposta.")
             try:
                 print(f"DEBUG: Finish Reason: {response.candidates[0].finish_reason}")
             except Exception:
@@ -167,10 +167,11 @@ def processar_email():
         print(f"Erro ao chamar a API do Gemini: {e}")
         return jsonify({'erro': f'Falha na comunicação com a IA: {str(e)}'}), 500
 
+if not os.path.exists('dataset.json'):
+    print("ERRO: 'dataset.json' não encontrado!")
+    print("Por favor, crie o 'dataset.json' com os 80 exemplos antes de rodar.")
+else:
+    treinar_modelo_local() 
+
 if __name__ == '__main__':
-    if not os.path.exists('dataset.json'):
-        print("ERRO: 'dataset.json' não encontrado!")
-        print("Por favor, crie o 'dataset.json' com os 80 exemplos antes de rodar.")
-    else:
-        treinar_modelo_local() 
-        app.run(debug=True)
+    app.run(debug=True)
