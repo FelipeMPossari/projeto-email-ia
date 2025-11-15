@@ -11,7 +11,7 @@ from sklearn.naive_bayes import MultinomialNB
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
-API_KEY = "CHAVE-API" 
+API_KEY = os.environ.get("API-KEY")
 
 try:
     genai.configure(api_key=API_KEY)
