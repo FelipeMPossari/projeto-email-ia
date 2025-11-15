@@ -1,0 +1,318 @@
+[
+    {
+        "texto": "feliz natal!",
+        "label": 0
+    },
+    {
+        "texto": "me chamo felipe",
+        "label": 0
+    },
+    {
+        "texto": "Obrigado pela sua ajuda, bom fim de semana.",
+        "label": 0
+    },
+    {
+        "texto": "oi, tudo bem?",
+        "label": 0
+    },
+    {
+        "texto": "parabéns pelo novo site",
+        "label": 0
+    },
+    {
+        "texto": "spam spam spam viagra",
+        "label": 0
+    },
+    {
+        "texto": "feliz ano novo",
+        "label": 0
+    },
+    {
+        "texto": "como vai você?",
+        "label": 0
+    },
+    {
+        "texto": "muito obrigado pelo retorno rápido!",
+        "label": 0
+    },
+    {
+        "texto": "você é um robô ou uma pessoa?",
+        "label": 0
+    },
+    {
+        "texto": "clique aqui e ganhe um prêmio incrível",
+        "label": 0
+    },
+    {
+        "texto": "excelente, muito obrigado!",
+        "label": 0
+    },
+    {
+        "texto": "gosto de chocolate",
+        "label": 0
+    },
+    {
+        "texto": "que horas são?",
+        "label": 0
+    },
+    {
+        "texto": "teste 123",
+        "label": 0
+    },
+    {
+        "texto": "por favor, ignore este email",
+        "label": 0
+    },
+    {
+        "texto": "recebido, obrigado.",
+        "label": 0
+    },
+    {
+        "texto": "ok",
+        "label": 0
+    },
+    {
+        "texto": "confirmado",
+        "label": 0
+    },
+    {
+        "texto": "bom feriado a todos",
+        "label": 0
+    },
+    {
+        "texto": "seu computador pode estar em risco",
+        "label": 0
+    },
+    {
+        "texto": "oferta imperdível de empréstimo",
+        "label": 0
+    },
+    {
+        "texto": "parabéns pelo seu aniversário!",
+        "label": 0
+    },
+    {
+        "texto": "fim de semana",
+        "label": 0
+    },
+    {
+        "texto": "entendido, grato.",
+        "label": 0
+    },
+    {
+        "texto": "olá, sou branco",
+        "label": 0
+    },
+    {
+        "texto": "que dia é hoje?",
+        "label": 0
+    },
+    {
+        "texto": "qual a previsão do tempo?",
+        "label": 0
+    },
+    {
+        "texto": "gosto de pizza",
+        "label": 0
+    },
+    {
+        "texto": "meu time de futebol ganhou",
+        "label": 0
+    },
+    {
+        "texto": "estou cansado hoje",
+        "label": 0
+    },
+    {
+        "texto": "bom dia, só testando",
+        "label": 0
+    },
+    {
+        "texto": "rsrsrsrs",
+        "label": 0
+    },
+    {
+        "texto": "hahaha que engraçado",
+        "label": 0
+    },
+    {
+        "texto": "você é uma IA?",
+        "label": 0
+    },
+    {
+        "texto": "quem é você?",
+        "label": 0
+    },
+    {
+        "texto": "isso é um teste",
+        "label": 0
+    },
+    {
+        "texto": "promoção relâmpago",
+        "label": 0
+    },
+    {
+        "texto": "ganhe dinheiro fácil",
+        "label": 0
+    },
+    {
+        "texto": "você viu aquele filme?",
+        "label": 0
+    },
+    {
+        "texto": "Olá, gostaria de solicitar um orçamento.",
+        "label": 1
+    },
+    {
+        "texto": "Estou com um problema no sistema, não consigo logar.",
+        "label": 1
+    },
+    {
+        "texto": "Qual o status do meu pedido 1234?",
+        "label": 1
+    },
+    {
+        "texto": "Bom dia, poderiam me enviar a fatura deste mês?",
+        "label": 1
+    },
+    {
+        "texto": "Preciso de ajuda para resetar minha senha.",
+        "label": 1
+    },
+    {
+        "texto": "gostaria de agendar uma reunião com o gerente.",
+        "label": 1
+    },
+    {
+        "texto": "o aplicativo não está abrindo no meu celular",
+        "label": 1
+    },
+    {
+        "texto": "erro 500 ao tentar gerar o relatório de vendas",
+        "label": 1
+    },
+    {
+        "texto": "preciso falar com um atendente urgente",
+        "label": 1
+    },
+    {
+        "texto": "podemos marcar uma call para amanhã às 10h?",
+        "label": 1
+    },
+    {
+        "texto": "qual sua disponibilidade para uma breve reunião?",
+        "label": 1
+    },
+    {
+        "texto": "como funciona o fundo de investimento DI?",
+        "label": 1
+    },
+    {
+        "texto": "quais são as taxas para transferência internacional?",
+        "label": 1
+    },
+    {
+        "texto": "não entendi a cláusula 5.1 do contrato",
+        "label": 1
+    },
+    {
+        "texto": "podem me explicar este débito na minha conta?",
+        "label": 1
+    },
+    {
+        "texto": "segue o documento de identidade em anexo",
+        "label": 1
+    },
+    {
+        "texto": "meus dados cadastrais estão desatualizados, como corrigir?",
+        "label": 1
+    },
+    {
+        "texto": "o pagamento da fatura já foi efetuado, segue comprovante",
+        "label": 1
+    },
+    {
+        "texto": "preciso do informe de rendimentos para o imposto de renda",
+        "label": 1
+    },
+    {
+        "texto": "solicitação de cancelamento do serviço",
+        "label": 1
+    },
+    {
+        "texto": "dúvida sobre o limite do meu cartão de crédito",
+        "label": 1
+    },
+    {
+        "texto": "como posso aumentar meu limite?",
+        "label": 1
+    },
+    {
+        "texto": "o sistema está fora do ar?",
+        "label": 1
+    },
+    {
+        "texto": "não recebi o email de confirmação",
+        "label": 1
+    },
+    {
+        "texto": "quero alterar meu endereço de cobrança",
+        "label": 1
+    },
+    {
+        "texto": "o boleto venceu, como pagar?",
+        "label": 1
+    },
+    {
+        "texto": "não consigo acessar minha conta",
+        "label": 1
+    },
+    {
+        "texto": "gostaria de falar sobre investimentos",
+        "label": 1
+    },
+    {
+        "texto": "meu cartão foi clonado",
+        "label": 1
+    },
+    {
+        "texto": "solicitação de extrato bancário",
+        "label": 1
+    },
+    {
+        "texto": "dúvida sobre o app",
+        "label": 1
+    },
+    {
+        "texto": "o pix não funcionou",
+        "label": 1
+    },
+    {
+        "texto": "quero cancelar meu cartão",
+        "label": 1
+    },
+    {
+        "texto": "quais os juros do empréstimo?",
+        "label": 1
+    },
+    {
+        "texto": "em anexo, meus documentos",
+        "label": 1
+    },
+    {
+        "texto": "por favor, atualizar meu cadastro",
+        "label": 1
+    },
+    {
+        "texto": "problema com o login",
+        "label": 1
+    },
+    {
+        "texto": "esqueci minha senha",
+        "label": 1
+    },
+    {
+        "texto": "onde fica a agência mais próxima?",
+        "label": 1
+    }
+]

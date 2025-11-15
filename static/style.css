@@ -1,0 +1,157 @@
+/* 1. Configurações Globais e Fundo */
+:root {
+    --cor-primaria: #007bff;
+    /* Azul primário */
+    --cor-primaria-hover: #0056b3;
+    /* Azul mais escuro */
+    --cor-fundo: #f4f7f6;
+    --cor-cartao: #ffffff;
+    --cor-texto: #333;
+    --cor-texto-secundario: #666;
+    --cor-borda: #ddd;
+    --raio-borda: 8px;
+    --sombra-cartao: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* 2. Efeito de "Cartão" Principal */
+main {
+    background-color: var(--cor-cartao);
+    border-radius: var(--raio-borda);
+    padding: 2.5rem;
+    box-shadow: var(--sombra-cartao);
+    border: 1px solid #e7e7e7;
+}
+
+/* 3. Tipografia */
+h2 {
+    text-align: center;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    text-align: center;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+/* 4. Formulário e Botões */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 98%;
+    height: 150px;
+    margin-bottom: 1rem;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-borda);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+input[type="file"] {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--cor-texto-secundario);
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #e0e0e0;
+}
+
+button[type="submit"] {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: var(--raio-borda);
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+/* 5. Caixa de Resultados */
+#resultados {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--raio-borda);
+    background-color: #f9f9f9;
+}
+
+/* Classe para esconder/mostrar resultados */
+.hidden {
+    display: none;
+}
+
+#resultados h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+#categoria {
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+#sub_categoria {
+    font-style: italic;
+    color: #555;
+    font-weight: 500;
+}
+
+#resultados p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    text-align: left;
+    margin-bottom: 0;
+}

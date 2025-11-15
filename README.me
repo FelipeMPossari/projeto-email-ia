@@ -1,0 +1,78 @@
+Classificador de E-mails com IA
+Este é um projeto de aplicação web que utiliza uma arquitetura híbrida de Machine Learning para classificar e-mails e sugerir respostas automáticas.
+
+O sistema utiliza um modelo Naive Bayes (treinado localmente com scikit-learn) para fazer uma filtragem rápida e determinar se um e-mail é "Produtivo" ou "Improdutivo". Em seguida, ele envia o e-mail para a API do Google Gemini para obter uma sub-classificação detalhada (ex: "Solicitação de Suporte") e gerar uma resposta única e profissional.
+
+Arquitetura Híbrida:
+
+Roteador Local (Naive Bayes):
+
+Quando um usuário envia um e-mail, o texto passa primeiro por uma função de pré-processamento (NLTK) que remove stop words e aplica stemming.
+
+Esse texto "limpo" é então classificado pelo modelo Naive Bayes (treinado com 80 exemplos do dataset.json) como "Produtivo" ou "Improdutivo".
+
+Esta etapa é instantânea e gratuita, filtrando a maioria dos e-mails.
+
+API do Gemini:
+
+O app.py pega o e-mail original e envia essas informações para a API do Google Gemini (gemini-2.5-flash).
+
+A API do Gemini, então, realiza as duas tarefas:
+
+Sub-classificação: Fornece um rótulo específico (ex: "Pedido de Orçamento", "Conversa Pessoal").
+
+Geração de Resposta: Cria uma resposta única e dinâmica, adequada ao contexto do e-mail.
+
+Como Rodar o Projeto
+Siga estes passos para executar a aplicação em sua máquina local.
+
+1. Estrutura de Pastas
+Seu projeto deve seguir esta estrutura para que o Flask encontre os arquivos:
+
+projeto-email-ia/
+│
+├── app.py           (O servidor principal)
+├── dataset.json     (O dataset de 80 exemplos)
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+└── templates/
+    └── index.html
+
+2. Instalação das Bibliotecas
+Abra seu terminal na pasta do projeto e execute o seguinte comando para instalar todas as dependências:
+
+Bash
+
+pip install flask PyMuPDF nltk scikit-learn google-generativeai
+
+3. Configuração da API
+O projeto precisa de uma chave de API do Google Gemini para funcionar.
+
+Vá para o Google AI Studio e crie sua chave de API gratuita.
+
+Abra o arquivo app.py.
+
+Encontre a linha: API_KEY = "COLE_SUA_CHAVE_SECRETA_DO_GOOGLE_AQUI"
+
+Cole sua chave de API entre as aspas.
+
+4. Executando o Servidor
+Com as bibliotecas instaladas e a chave de API no lugar, execute o app.py:
+
+Bash
+
+python app.py
+O terminal mostrará:
+
+Logs do NLTK baixando pacotes (apenas na primeira vez).
+
+Logs do treinamento do modelo local (ex: "Iniciando treinamento...").
+
+"Modelo Gemini carregado."
+
+"Running on http://127.0.0.1:5000"
+
+Abra esse endereço (http://127.0.0.1:5000) no seu navegador para usar a aplicação.
